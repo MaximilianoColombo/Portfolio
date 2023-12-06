@@ -1,0 +1,26 @@
+@import url(colores.css);
+
+footer{
+    text-align: center;
+    background-color: var(--color1);
+    color:var(--color4);
+    padding: 1rem 0;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    margin: 0;
+}
+
+.contenedor{
+    padding: 2rem;
+}
+
+nav{
+    
+    background-color: var(--color1);
+}
+

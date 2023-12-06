@@ -1,0 +1,39 @@
+<!-- templates/base.html -->
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Mi portfolio{% endblock title %}</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="{% static 'css/colores.css' %}">
+    <link rel="stylesheet" href="{% static 'css/globales.css' %}">
+    {% block stylesheets %}{% endblock %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+</head>
+<body >
+    <nav>
+        <ul class="navbar">
+            <li ><a href="{% url 'index'%}">Inicio</a></li>
+            <li><a href="{% url 'about'%}">Sobre mi</a></li>
+            <li><a href="{% url 'projects'%}">Proyectos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="contenedor">
+            {% block page_content %}
+            {% endblock page_content %} 
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados. Maximiliano Colombo Freelancer</p>
+    </footer>
+</body>
+</html>

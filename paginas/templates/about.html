@@ -1,0 +1,58 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+{% block page_content %}
+    <section>
+        <h2>Para conocerme un poco mas</h2>
+        <div class="gridBiografia">
+            <img class="imagenPerfil" src="{% static 'img/fotoPerfil.jpg' %}" alt="foto de perfil">
+            <p class="biografia">{{persona.biografia}}</p>
+        </div>
+    </section>
+    <section>
+        <h2>Estudios realizados</h2>
+        <ol class="estudios">
+            {% for i in estudios %}
+                <li><b>{{i.periodo}}: </b>{{i.institucion}}.{{i.titulo}}({{i.estado}})</li>
+            {% endfor %}
+        </ol>
+    </section>
+    <section>
+        <h2>Experiencia laboral</h2>
+        <ol class="experiencia">
+            {% for i in experiencia %}
+                <li><img class="iconoExp" src="/static/img/{{ i.icono }}" alt="icono"><b>{{i.periodo}}: </b>{{i.puesto}} en {{i.lugar}}. {{i.descripcion}}.</li>
+            {% endfor %}
+        </ol>
+    </section>
+    <div class="contenedorAbout">
+        <section>
+            <h2>Habilidades</h2>
+            <ul class="habilidades">
+                {% for i in habilidades %}
+                <li >
+                    <a class="habilidades-item" href="{{i.link}}" target="_blank">
+                        <img class="imgHabilidad" src="/static/img/habilidades/{{ i.imagen }}" alt="">
+                        <h3>{{i.nombre}}</h3>
+                    </a>
+                
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+        <section>
+            <h2>Contacto</h2>
+            <ul class="contacto">
+                <li><a href="{{persona.linkedin}}" target="_blank">Linkedin</a></li>
+                <li><a href="mailto:{{persona.correo}}" target="_blank">Correo Electrónico</a></li>
+                <li><a href="{{persona.github}}" target="_blank">Github</a></li>
+            </ul>
+        </section>
+    </div>
+    
+
+{% endblock page_content %}

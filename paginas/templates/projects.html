@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{% static 'css/projects.css' %}">
+{% endblock %}
+{% block page_content %}
+    <h1>Mis proyectos</h1>
+    
+    <ul class="proyectos">
+        {% for proyecto in proyectos%}
+        <li class="proyecto-item">
+            <h2>{{proyecto.titulo}}</h2>
+            <p>Tecnologías utilizadas: {{proyecto.tecnologia}}</p>
+            <img class="imagenProyecto" src="/static/img/proyectos/{{ proyecto.imagen }}" alt="imagen proyecto">
+            <a class="botonProyecto" href="{{proyecto.link}}" target="_blank">Ir al proyecto</a>
+        </li>
+        {% endfor %}
+    </ul>
+    
+{% endblock page_content %}

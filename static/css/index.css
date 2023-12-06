@@ -1,0 +1,84 @@
+@import url(colores.css);
+
+/* Hero */
+
+.hero{
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+    position:relative;
+    margin-bottom: 2rem;
+}
+
+.contenido-hero{
+    position:absolute;
+    background-color: rgba(17, 3, 3, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3rem;
+    margin: 0;
+    padding:0;
+}
+
+.contenido-hero h2, .contenido-hero p {
+    color: var(--color4)
+}
+
+.servicios {
+    display:flex;
+    align-items: start;
+    justify-content: start;
+    column-gap: 3rem;
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.servicio h3{
+    color: var(--color3);
+    font-weight: 400;
+}
+
+.servicio p {
+    line-height: 2;
+    text-align: center;
+}
+
+.iconos {
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--color1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.iconos img {
+    width: 70%; 
+    height: auto; 
+    display: block;
+}
+
+
+.titulo-habilidades{
+    margin-bottom: 2rem;
+    
+}
+
+.botonContacto{
+    background-color: var(--color1);
+    padding: 1rem;
+    border-radius: 10%;
+}
