@@ -2,6 +2,7 @@
 /*Box Sizing*/
 html {
     box-sizing: border-box;
+    width: 100vw;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -37,8 +38,10 @@ main{
   margin: 0 auto;
   background-color: var(--color2);
   box-shadow: 10px 10px 10px 4px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 10px 4px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 10px 4px rgba(0,0,0,0.75);
-  
+  -webkit-box-shadow: 10px 10px 10px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 10px 4px rgba(0,0,0,0.75);  
 }
 
+a:hover{
+  background-color: rgba(0,0,0,0.75);
+}

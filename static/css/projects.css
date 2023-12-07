@@ -5,6 +5,7 @@
     row-gap: 4rem;
 }
 
+
 .proyecto-item{
     display: flex;
     flex-direction: column;
@@ -24,4 +25,13 @@
     background-color: var(--color1);
     padding: 1rem 2rem;
     border-radius: 40%;
+}
+
+@media (max-width:768px){
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

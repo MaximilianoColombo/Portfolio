@@ -30,10 +30,11 @@
 }
 
 .servicios {
-    display:flex;
-    align-items: start;
-    justify-content: start;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
     column-gap: 3rem;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .servicio{
@@ -81,4 +82,14 @@
     background-color: var(--color1);
     padding: 1rem;
     border-radius: 10%;
+}
+
+@media (max-width:768px){
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;
+    }
 }

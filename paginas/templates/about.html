@@ -8,7 +8,7 @@
 {% block page_content %}
     <section>
         <h2>Para conocerme un poco mas</h2>
-        <div class="gridBiografia">
+        <div class="contenedorBiografia">
             <img class="imagenPerfil" src="{% static 'img/fotoPerfil.jpg' %}" alt="foto de perfil">
             <p class="biografia">{{persona.biografia}}</p>
         </div>
@@ -25,11 +25,14 @@
         <h2>Experiencia laboral</h2>
         <ol class="experiencia">
             {% for i in experiencia %}
-                <li><img class="iconoExp" src="/static/img/{{ i.icono }}" alt="icono"><b>{{i.periodo}}: </b>{{i.puesto}} en {{i.lugar}}. {{i.descripcion}}.</li>
+                <li class="experiencia-item">
+                    <img class="iconoExp" src="/static/img/experienciaLaboral/{{ i.icono }}" alt="icono">
+                    <p><b>{{i.periodo}}: </b>{{i.puesto}} en {{i.lugar}}. {{i.descripcion}}.</p>
+                </li>
             {% endfor %}
         </ol>
     </section>
-    <div class="contenedorAbout">
+    <div class="contenedorContactoHabilidades">
         <section>
             <h2>Habilidades</h2>
             <ul class="habilidades">

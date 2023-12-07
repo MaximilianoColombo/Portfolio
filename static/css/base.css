@@ -8,19 +8,36 @@ footer{
 }
 
 .navbar{
+    margin: 0; 
     display:flex;
     justify-content: space-around;
     align-items: center;
     height: 10vh;
-    margin: 0;
 }
 
 .contenedor{
     padding: 2rem;
 }
 
+.navbar li a{
+    padding: 0.8rem;
+}
+
 nav{
     
     background-color: var(--color1);
 }
+
+@media (max-width:768px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        height: 100%;
+    }
+}
+
+
 

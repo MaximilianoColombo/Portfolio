@@ -1,4 +1,4 @@
-
+/*Estilos generales*/
 h2{
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -6,39 +6,11 @@ h2{
     padding: 1rem;
 }
 
-.iconoExp{
-    width:2rem;
-    height: auto;
-}
-
-.imgHabilidad{
-    height: 5rem;
-    width: auto;
-}
-.habilidades{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-
 .experiencia li, .estudios li,.contacto li{
     margin-bottom: 2rem;
 }
-
-.habilidades-item{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    column-gap: 1rem;
-}
-
-.contenedorAbout{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 2rem;
-}
-
-.gridBiografia{
+/*Biografia*/
+.contenedorBiografia{
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 2rem;
@@ -52,4 +24,55 @@ h2{
 .biografia{
     text-align: justify;
     line-height: 2;
+}
+
+
+/*Experiencia laboral*/
+.experiencia-item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 1rem;
+}
+
+.iconoExp{
+    width:2rem;
+    height: auto;
+}
+
+/*Habilidades y contacto*/
+.imgHabilidad{
+    height: 5rem;
+    width: auto;
+}
+.habilidades{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.habilidades-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 1rem;
+}
+
+.contenedorContactoHabilidades{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+}
+
+.contacto li a {
+    padding: 0.8rem;
+}
+
+@media (max-width:768px){
+    .contenedorBiografia,.contenedorContactoHabilidades{
+        display: block;
+    }
+    .biografia{
+        margin-top: 1rem;
+    }    
 }

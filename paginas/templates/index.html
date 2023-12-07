@@ -26,9 +26,9 @@
 
     <h2 class="titulo-habilidades">Mis habilidades</h2>
         
-
+    <div class="servicios">
         {% for i in servicios %}
-        <div class="servicios">
+        
             <section class="servicio">
                 <h3>{{ i.nombre }}</h3>
                 <div class="iconos">
@@ -36,7 +36,7 @@
                       
                     
                 </div>
-                <p>{{i.descripcion }} </p> 
+                <p>{{i.descripcion }}. </p> 
             </section>
         {% endfor %}
 
