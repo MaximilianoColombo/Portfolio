@@ -84,29 +84,25 @@ WSGI_APPLICATION = 'Portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
+#DATABASES = {'default': {'ENGINE': 'django.db.backends.sqlite3','NAME': BASE_DIR / 'db.sqlite3',}}
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Postgres-H10m',
-        'USER': 'postgres',
-        'PASSWORD': 'CG-a4FG--dDbf2AGecDEgFFd6DAbdBbA',
-        'HOST': 'roundhouse.proxy.rlwy.net',
-        'PORT': '42438',
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'Postgres-H10m',
+            'USER': 'postgres',
+            'PASSWORD': 'CG-a4FG--dDbf2AGecDEgFFd6DAbdBbA',
+            'HOST': 'roundhouse.proxy.rlwy.net',
+            'PORT': '42438',
+        }
     }
-}
 
 if 'DATABASE_URL' in os.environ:
     DATABASES['default'] = dj_database_url.config(
         conn_max_age=500,
         conn_health_checks=True,
     )
+
 
 
 # Password validation
