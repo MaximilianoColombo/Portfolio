@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-&psk#na5l=p3q8
 #DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['https://portfolio-production-fb9a.up.railway.app/']
+ALLOWED_HOSTS = ['https://portfolio-production-fb9a.up.railway.app']
 
 
 # Application definition
@@ -153,4 +153,4 @@ STORAGES = {
     },
 }
 
-CSRF_TRUSTED_ORIGINS = ['https://portfolio-production-fb9a.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['https://portfolio-production-fb9a.up.railway.app']
