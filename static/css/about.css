@@ -72,10 +72,17 @@ h2{
 }
 
 @media (max-width:768px){
-    .contenedorBiografia,.contenedorContactoHabilidades, .habilidades{
+    .contenedorBiografia,.contenedorContactoHabilidades{
         display: block;
     }
     .biografia{
         margin-top: 1rem;
     }    
+    .habilidades{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1rem;
+    }
 }
