@@ -92,9 +92,14 @@ WSGI_APPLICATION = 'Portfolio.wsgi.application'
 #}
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.getenv('DATABASE_URL')
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'Postgres-H10m',
+        'USER': 'postgres',
+        'PASSWORD': 'CG-a4FG--dDbf2AGecDEgFFd6DAbdBbA',
+        'HOST': 'roundhouse.proxy.rlwy.net',
+        'PORT': '42438',
+    }
 }
 
 if 'DATABASE_URL' in os.environ:
