@@ -13,7 +13,7 @@
 
 .contenido-hero{
     position:absolute;
-    background-color: rgba(17, 3, 3, 0.8);
+    background-color: rgba(var(--primario), 0.8);
     width: 100%;
     height: 100%;
     display: flex;
@@ -27,6 +27,10 @@
 
 .contenido-hero h2, .contenido-hero p {
     color: var(--color4)
+}
+
+.contenido-hero svg{
+    stroke: var(--color4);
 }
 
 .servicios {

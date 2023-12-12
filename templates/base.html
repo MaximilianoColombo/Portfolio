@@ -16,14 +16,24 @@
     {% block stylesheets %}{% endblock %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <script src="{% static 'app.js' %}" defer></script>
 </head>
 <body >
-    <nav>
-        <ul class="navbar">
+    <nav class="navbar">
+        <ul class="navbar-lista">
             <li ><a href="{% url 'index'%}">Inicio</a></li>
             <li><a href="{% url 'about'%}">Sobre mi</a></li>
             <li><a href="{% url 'projects'%}">Proyectos</a></li>
         </ul>
+        <div class="theme-contenedor">
+            <img class="icono-switch" src="/static/img/moon.svg" alt="icono theme">
+            <label class="navbar-switch">
+                <input id="switch" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <img class="icono-switch" src="/static/img/sun.svg" alt="icono theme">
+        </div>
+        
     </nav>
     <main>
         <div class="contenedor">

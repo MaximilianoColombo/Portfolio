@@ -35,6 +35,9 @@ h2{
     column-gap: 1rem;
 }
 
+.experiencia-item p {
+    text-align: justify;
+}
 .iconoExp{
     width:2rem;
     height: auto;
