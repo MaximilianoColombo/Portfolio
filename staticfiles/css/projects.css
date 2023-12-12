@@ -1,0 +1,37 @@
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    row-gap: 4rem;
+}
+
+
+.proyecto-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.imagenProyecto{
+    height: 20rem;
+    width: 100%;
+    object-fit: cover ;
+}
+
+.botonProyecto{
+    font-size: 1.5rem;
+    background-color: var(--color1);
+    padding: 1rem 2rem;
+    border-radius: 40%;
+}
+
+@media (max-width:768px){
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

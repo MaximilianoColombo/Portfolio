@@ -1,0 +1,47 @@
+@import url(colores.css);
+/*Box Sizing*/
+html {
+    box-sizing: border-box;
+    width: 100vw;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+  margin: 0;
+  padding :0;
+}
+
+h1,h2,h3,p{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color4);
+}
+
+main{
+  background-color: var(--color3);
+  margin:0;
+  padding:2rem;
+  color:var(--color4)
+}
+
+.contenedor{
+  margin: 0 auto;
+  background-color: var(--color2);
+  box-shadow: 10px 10px 10px 4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 10px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 10px 4px rgba(0,0,0,0.75);  
+}
+
+a:hover{
+  background-color: rgba(0,0,0,0.75);
+}
