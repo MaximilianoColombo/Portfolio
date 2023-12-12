@@ -153,4 +153,4 @@ STORAGES = {
     },
 }
 
-#CSRF_TRUSTED_ORIGINS = ['.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://web-production-aa41.up.railway.app']
