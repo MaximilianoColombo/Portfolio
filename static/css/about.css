@@ -22,8 +22,9 @@ h2{
 }
 
 .biografia{
-    text-align: justify;
+    text-align:left;
     line-height: 1.5;
+    white-space: pre-line;
 }
 
 
