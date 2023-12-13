@@ -1,0 +1,17 @@
+:root{
+    --color1:#161A30;
+    --color2: #31304D;
+    --color3: #B6BBC4;
+    --color4: #F0ECE5;
+    --primario:0,0,0;
+    --secundario:255,255,255;
+}
+
+.light-mode{
+    --color1:#FED9ED;
+    --color2: #E7BCDE;
+    --color3: #BB9CC0;
+    --color4: #232c4f;
+    --primario: 255,255,255;
+    --secundario:0,0,0;
+}
