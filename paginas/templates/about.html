@@ -10,7 +10,7 @@
         <h2>Para conocerme un poco mas</h2>
         <div class="contenedorBiografia">
             <img class="imagenPerfil" src="{% static 'img/fotoPerfil.jpg' %}" alt="foto de perfil">
-            <div class="biografia">{{persona.biografia}}</div>
+            <div class="biografia">{{persona.biografia|safe}}</div>
         </div>
     </section>
     <section>
