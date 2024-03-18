@@ -8,9 +8,10 @@ footer{
 }
 /*barra de navegación*/
 .navbar{
-    display: grid;
-    grid-template-columns: 6fr 1fr;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
     
 }
 .navbar-lista{
