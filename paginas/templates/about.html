@@ -13,25 +13,28 @@
             <div class="biografia">{{persona.biografia|safe}}</div>
         </div>
     </section>
-    <section>
-        <h2>Estudios realizados</h2>
-        <ol class="estudios">
-            {% for i in estudios %}
-                <li><b>{{i.periodo}}: </b>{{i.institucion}}.{{i.titulo}}({{i.estado}})</li>
-            {% endfor %}
-        </ol>
-    </section>
-    <section>
-        <h2>Experiencia laboral</h2>
-        <ol class="experiencia">
-            {% for i in experiencia %}
-                <li class="experiencia-item">
-                    <img class="iconoExp" src="/static/img/experienciaLaboral/{{ i.icono }}" alt="icono">
-                    <p><b>{{i.periodo}}: </b>{{i.puesto}} en {{i.lugar}}. {{i.descripcion}}.</p>
-                </li>
-            {% endfor %}
-        </ol>
-    </section>
+    <div class="contenedorFormacion">
+        <section>
+            <h2>Estudios realizados</h2>
+            <ol class="estudios">
+                {% for i in estudios %}
+                    <li><b>{{i.periodo}}: </b>{{i.institucion}}.{{i.titulo}}({{i.estado}})</li>
+                {% endfor %}
+            </ol>
+        </section>
+        <section>
+            <h2>Experiencia laboral</h2>
+            <ol class="experiencia">
+                {% for i in experiencia %}
+                    <li class="experiencia-item">
+                        <img class="iconoExp" src="/static/img/experienciaLaboral/{{ i.icono }}" alt="icono">
+                        <p><b>{{i.periodo}}: </b>{{i.puesto}} en {{i.lugar}}. {{i.descripcion}}.</p>
+                    </li>
+                {% endfor %}
+            </ol>
+        </section>
+    </div>
+    
     <div class="contenedorContactoHabilidades">
         <section>
             <h2>Habilidades</h2>
