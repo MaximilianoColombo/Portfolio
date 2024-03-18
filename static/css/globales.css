@@ -3,6 +3,7 @@
 html {
     box-sizing: border-box;
     width: 100vw;
+    height: 100vh;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -10,7 +11,10 @@ html {
 
 body{
   margin: 0;
-  padding :0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,h2,h3,p{
@@ -31,7 +35,8 @@ main{
   background-color: var(--color3);
   margin:0;
   padding:2rem;
-  color:var(--color4)
+  color:var(--color4);
+  flex-grow:1;
 }
 
 .contenedor{
@@ -43,5 +48,5 @@ main{
 }
 
 a:hover{
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(var(--primario),0.75);
 }
